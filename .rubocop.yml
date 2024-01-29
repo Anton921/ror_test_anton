@@ -1,0 +1,23 @@
+AllCops:
+  Exclude:
+    - db/migrate/*.rb
+    - db/*.rb
+    - bin/bundle
+    - config/environments/*.rb
+    - config/initializers/*.rb
+    - config/routes.rb
+    - tmp/**/*
+    - app/views/**/*
+Metrics/BlockLength:
+  Exclude:
+    - Rakefile
+    - '**/*.rake'
+    - test/**/*.rb
+    - app/admin/*.rb
+  Max: 30
+Style/Documentation:
+  Enabled: false
+Metrics/LineLength:
+  Max: 200
+Naming/AccessorMethodName:
+  Enabled: false
